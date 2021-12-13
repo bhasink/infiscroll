@@ -15,7 +15,9 @@ const dirNode = 'node_modules'
 module.exports = {
   devServer: {
     inline:true,
-    port: 3000
+    port: 3000,
+    compress: true,
+    disableHostCheck: true,  
   },
   entry: [
     path.join(dirApp, 'index.js'),
