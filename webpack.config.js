@@ -13,6 +13,10 @@ const dirStyles = path.join(__dirname, 'styles')
 const dirNode = 'node_modules'
 
 module.exports = {
+  devServer: {
+    inline:true,
+    port: 3000
+  },
   entry: [
     path.join(dirApp, 'index.js'),
     path.join(dirStyles, 'index.scss')
